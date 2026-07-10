@@ -148,7 +148,6 @@ textarea{
     width: 25%;
     background-color: #f0f8ff;
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -178,4 +177,9 @@ img{
 }
 .actualizar:hover{
     background-color: #8fc5f7;
+}
+.contenedor{
+    border-radius: 8px;
+    box-shadow: 0 0 5px #333e;
+    padding: 6px;
 }
