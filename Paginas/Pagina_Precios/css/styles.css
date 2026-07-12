@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #eee;
+}
+
+body{
+    font-family: sans-serif; 
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+.navegation{
+    background-color: transparent;
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    height: 8vh;
+
+}
+.enca_nav{
+    margin: 15px 40px;
+}
+
+.acces{
+    margin-top: 15px;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.item__acces:hover{
+    box-shadow: 0 0 5px #fff;
+}
+
+.item__acces{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 3px;
+    border-radius: 15px;
+    padding: 3px 12px;
+    z-index: 999;
+}
+
+.item--defa{
+    background-color: #c7c7d3;
+    color: #333;
+}
+
+.info{
+    height: 82vh;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.subti__section{
+    margin: 30px 0 25px 0;
+    font-size: 45px;
+    padding: 12px;
+}
+
+.para__section{
+    width: 65vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.select__section{
+    box-shadow: 0 0 5px #eee;
+    padding: 8px 35px;
+    border-radius: 35px;
+    box-sizing: border-box;
+}
+
+.button__div{
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #eee;
+    font-weight: bold;
+    background: #3333331a;
+    
+    
+}
+
+.button__div:hover{
+    box-shadow: 0 0 7px #eee;
+    background-color: #eeea;
+    opacity: 60%;
+    color: #333;
+}
+
+
+.option__prices{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48vh;
+    width: 100vw; 
+}
+
+.separador{
+    display: flex;
+    gap: 35px;
+}
+.cat__prices{
+    display: flex;
+    margin-top: 30px;
+    padding: 10px 25px;
+    box-shadow: 0 3px 18px #eee;
+    border-radius: 25px;
+    background-color: #333;
+    opacity: 60%;
+}
+
+.box__info--prices{
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan__name--price{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.para__price--sub{
+    margin: 12px 0;
+    font-size: 13px;
+    color: #c7c7d3d0;
+}
+
+.str__para--sub{
+    font-size: 36px;
+    padding: 0 5px;
+}
+
+.button__buy--price{
+    background-color: #eee;
+    color: #333;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+
+.button__buy--price:hover{
+    background-color: #3333336b;
+    color: #eee;
+    box-shadow: 0 0 5px #eee;
+}
+
+
+.benefits{
+    border-top: 2px solid #eee;
+    padding: 15px 5px 15px 4px;
+}
+
+.item__benefits::marker{
+    color: #eee;
+    font-size: 25px;
+}
+
+.price__high--cat{
+    background-image: linear-gradient(to right, #243949 100%, #517fa4 0%);
+}
+
+.info__creation{
+    background-color: #243949b6;
+    height: 8vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    
+}
