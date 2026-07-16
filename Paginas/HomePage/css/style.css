@@ -16,6 +16,7 @@ body{
     width: 100%;
     flex-basis: 0;
     margin: auto;
+    min-height:8vh;
 }
 
 .navbar__separator{
@@ -97,4 +98,188 @@ h1:hover{
 
 .link__item--login:hover{
     box-shadow: 0 0 6px #CA48E9;
+}
+
+
+/* Information Section*/
+
+.information{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.information__left--full{
+    width: 50vw;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    min-height: 92vh;
+    justify-content: space-between;
+
+}
+
+.information__left{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    min-width: 450px;
+    padding: 45px;
+    margin: 45PX;
+}
+
+.subtitle{
+    border-bottom: 2px solid #22D4F0;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    max-width: 185px;
+}
+
+.subtitle__three{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    padding: 2px 6px;
+    margin-top: 15px;
+}
+
+.subtitle, 
+.subtitle__three{
+    font-style: italic;
+}
+
+.information__par{
+    color: #8B95A5;
+    text-align: justify;
+    padding: 10px 6px;
+    max-width: 92%;
+}
+
+.bottonnext{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    margin: 18PX;
+    flex-basis: 0;
+}
+
+.separator__buttonnext{
+    background: linear-gradient(to right, #22D4F0, #CA48E9) padding-box, linear-gradient(to right, #22D4F0, #CA48E9) border-box;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    max-width: 70px;
+    min-height: 55px;
+    padding: 3px;
+    margin: 14px;
+}
+
+.buttonnext__information{
+    border-radius: 50%;
+    min-width: 70px;
+    max-height: 58px;
+    text-align: center;
+    color: #eee;
+    border: 1px solid transparent;
+    background: #323846;
+    border: 1px solid transparent;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.separator__buttonnext:hover{
+    box-shadow: 0 0 8px #CA48E9;
+}
+
+.separator__subtitle--button{
+    align-self: center;
+    flex-grow: 1;
+}
+
+.buttonnext_subtitle{
+    font-size: 14px;
+}
+
+.link__next{
+    text-decoration: none;
+    color: #22D4F0;
+}
+
+
+/* Bottom Section */
+
+.information__left--bottom{
+    display: flex;
+    gap: 15px;
+    padding: 32px;
+    background: linear-gradient(to left, #22D4F0, #CA48E9);
+    align-self: start;
+    align-content: end;
+    min-width: 92%;
+    justify-content: space-between;
+}
+
+.element__left--bottom{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+.link__elementleft--button{
+    text-decoration: none;
+    color: #eee;
+}
+
+
+/* Image rigth side*/
+
+.imagen_rightfull{
+    width: 40vw;
+    max-height: 70vh;
+    min-height: 92vh;
+    align-content: center;
+    margin: auto;
+    margin-left: 145px;
+    align-items: center;
+    
+}
+
+.image__leftsection{
+    width: 55%;
+    height: 75%;
+    transition: filter .3s, widht .5s, height .5s;
+    
+}
+
+.image__leftsection:hover{
+    filter: drop-shadow(0 0 5px #fff);
+    width: 60%;
+    height: 80%;
+}
+
+
+/* Asidebar*/
+
+.asidevar{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.asidebar__netsoc{
+    width: 100px;
+    height: 100px;
+}
+
+.link__aside--space{
+    text-decoration: none;
+    color: #eee;
+    text-shadow: 0 0 8px #fff;
 }
