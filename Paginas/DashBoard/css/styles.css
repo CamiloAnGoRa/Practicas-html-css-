@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -7,23 +11,41 @@ body{
     background-color: #f4f5f7a2;
     color: #333e33;
     font-style: italic;
-    display: flex;
     flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 /* Universal info*/
+body,
+.block__rate, 
+.rateproject, 
+.moreinformation, 
+.block__rate--option,
+.main__aside, .aside_list, 
+.main__content,
+.flexbox,
+.section_content,
+.aside_list li,
+.link__block,
+.form__div, 
+#form, 
+.userinfo,
+.head,
+.searchbar{
+    display: flex;
+}
+
 body, 
+.flexbox,
 .head, 
 .section_content,
-.block__rate,
-.rateproject,
-.moreinformation,
-.block__rate--option,
+.main__aside,
 .separete_section,
 .main__content,
-.main__aside
+.block__rate,
+.form__div,
+#form,
+.details__form,
+.userinfo
 {
     box-sizing: border-box;
 }
@@ -43,7 +65,6 @@ body,
 .rateproject, 
 .moreinformation, 
 .block__rate--option{
-    display: flex;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -64,20 +85,27 @@ body,
 
 .main__aside, .aside_list, 
 .main__content{
-    display: flex;
     flex-direction: column;
+}
+
+.details__form, 
+.details__form legend, 
+#form h2, 
+.label__form--details, 
+.userinfo, 
+.userinfo::placeholder, 
+.registerbutton__form{
+    color: #7e3af26c;
 }
 
 /* Flexbox initial*/
 .flexbox{
-    display: flex;
     flex-direction: column;
 }
 
 /* Header */
 .head{
     max-width: 100%;
-    display: flex;
     min-height: 8vh;
     flex-wrap: wrap;
     align-items: center;
@@ -92,7 +120,6 @@ body,
 }
 
 .searchbar{
-    display: flex;
     flex-grow: 4;
     padding: .4rem .5rem;
     flex-shrink: 1;
@@ -115,11 +142,16 @@ body,
 /* Aside Content*/
 .section_content{
     flex-grow: 1;
-    display: flex;
+    align-items: start;
 }
 
 .main__aside{
+    margin: 8px;
     min-width: 15vw;
+    min-width: 240px;
+    height: 89.5vh;
+    position: sticky;
+    top: 0;
 }
 
 .aside_list{
@@ -128,18 +160,17 @@ body,
     width: 100%;
     margin: 0;
     flex-grow: 1;
+    
 }
 
 .aside_list li{
     flex-grow: 1;
-    display: flex;
 }
 
 .link__block{
     color: #11182773;
     height: 100%;
     width: 100%;
-    display: flex;
     transition: background-color .3s, 
                 border-radius .3s, 
                 border-left .3s, 
@@ -154,6 +185,8 @@ body,
 }
 
 .aside__button{
+    border-color: transparent;
+    outline: none;
     padding: 12px 16px;
     border-radius: 10px;
     background-color: #7e3af2;
@@ -167,16 +200,15 @@ body,
 
 /*Main content*/
 .separete_section{
-    min-width: 85vw;
+    width: 85%;
     padding: 8px;
-    min-height: 92vh;
+    min-height: auto;
 }
 
 .main__content{
     width: 100%;
     
 }
-
 
 .block__rate{
     min-height: 8vh;
@@ -202,6 +234,100 @@ body,
     padding: 10px;
 }
 
+/*Form*/
+.form__div{
+    width: 100%;
+    margin-top: 8px;
+    justify-content: center;
+    padding: 8px;
+    
+}
+
+#form{
+    flex-direction: column;
+    min-width: 55%;
+    padding: 16px;
+    background-color: #d8d8e662;
+    border-radius: 16px;
+    box-shadow: 0 0 6px #7e3af2;
+    min-height: auto;
+    
+}
+
+.details__form{
+    padding: 0 15px;
+    border-radius: 15px;
+    margin: 18px 8px;
+    border: 2px solid #7e3af26c;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-items: center;
+}
+
+.details__form legend{
+    padding: 10px;
+    text-transform: uppercase;
+    flex-basis: 0;
+}
+
+#form h2{
+    margin: auto;
+    padding: 3px 8px;
+    text-shadow: 0 0 6px #7e3af277;
+}
+
+.label__form--details{
+    display: block;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.userinfo{
+    margin: 18px 4px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #7e3af26c;
+    width: 90%;
+    
+}
+
+.userinfo:focus{
+    box-shadow: 0 0 5px #7e3af2;
+    border-color: #7e3af277;
+    outline: none;
+}
+
+.userinfo::placeholder{
+    padding: 8px;
+    font-weight: bold;
+}
+
+.userinfo::focus{
+    box-shadow: 0 0 5px #7e3af2;
+
+}
+
+.registerbutton__form{
+    align-self: center;
+    min-width: 100px;
+    max-width: 150px;
+    border: 2px solid #7e3af26c;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 18px;
+    text-transform: uppercase;
+    transition: box-shadow .3s, 
+                text-shadow .3s;
+}
+
+.registerbutton__form:hover{
+    box-shadow: 0 0 3px #7e3af2;
+    text-shadow: 0 0 2px #7e3af2;
+}
+
+
+
+/* Conditions Screen*/
 @media screen and (max-width: 900px) {
     .main__aside{
         display: none;

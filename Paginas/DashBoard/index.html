@@ -19,7 +19,7 @@
         <div class="section_content">
             <aside class="main__aside">
                 <ul class="aside_list">
-                    <li class="block_item"><a href="#" class="link__block">Forms</a></li>
+                    <li class="block_item"><a href="#form" class="link__block">Forms</a></li>
                     <li class="block_item"><a href="#" class="link__block">Cards</a></li>
                     <li class="block_item"><a href="#" class="link__block">Buttons</a></li>
                     <li class="block_item"><a href="#" class="link__block">Modals</a></li>
@@ -40,6 +40,33 @@
                         <div class="moreinformation">
                             <a href="#" class="block__rate--option">View More</a>
                         </div>
+                    </div>
+
+                    <div class="form__div">
+                        <form action="POST" id="form">
+                            <h2>Formulario de registro</h2>
+
+                            <fieldset class="details__form">
+                                <legend>personal information</legend>
+                                    <label for="name" class="label__form--details">Name: </label>
+                                    <input type="text" class="userinfo" placeholder="Camilo Andres" id="name" required>
+
+                                    <label for="lastname" class="label__form--details">Last Name: </label>
+                                    <input type="text" class="userinfo" placeholder="Gomez Rativa" id="lastname" required>
+                            </fieldset>
+
+                            <fieldset class="details__form">
+                                <legend>user info</legend>
+                                    <label for="email" class="label__form--details">Email: </label>
+                                    <input type="email" class="userinfo" placeholder="example@gmail.com" id="email" required>
+
+                                    <label for="user" class="label__form--details">User: </label>
+                                    <input type="text" class="userinfo" placeholder="pepito123" id="user" required>
+                            </fieldset>
+                            <input type="button" value="Register" class="registerbutton__form">
+                            
+                            
+                        </form>
                     </div>
                 </main>
             </div>
